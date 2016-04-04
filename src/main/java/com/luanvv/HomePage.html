@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="https://git-wip-us.apache.org/repos/asf/wicket/repo?p=wicket.git;a=blob_plain;f=wicket-core/src/main/resources/META-INF/wicket-1.5.xsd;hb=master">
+<head>
+<title>Index</title>
+</head>
+<body>
+	<wicket:extend>
+		<div class="col-md-12">
+			<h1 class="text-center">Hehe</h1>
+		</div>
+		<div class="col-md-12">
+			<form wicket:id="form">
+				<div class="form-group">
+					<span wicket:id="feedbackPanel"></span>
+				</div>
+				<div class="form-group">
+					<label wicket:for="fullName">Full name</label> <input type="text"
+						class="form-control" wicket:id="fullName" />
+				</div>
+				<div class="form-group">
+					<label wicket:for="email">Email address</label> <input type="email"
+						class="form-control" wicket:id="email" />
+				</div>
+				<div class="form-group">
+					<label wicket:for="dateOfBirth">Date of Birth</label> <input type="text"
+						class="form-control" wicket:id="dateOfBirth" />
+				</div>
+				<div class="form-group">
+					<label wicket:for="password">Password</label> <input
+						type="password" class="form-control" wicket:id="password" />
+				</div>
+				<div>
+					<input type="submit" class="btn btn-default" wicket:id="submitBtn"/>
+					<button type="button" class="btn btn-default" wicket:id="disableButton">
+						<span wicket:id="LabelDisableButton"></span>
+					</button>
+					<input type="button" wicket:id="toggleBtn" />
+					<input class="btn btn-primary" type="reset" /> 
+				</div>
+			</form>
+		</div>
+	</wicket:extend>
+</body>
+</html>
